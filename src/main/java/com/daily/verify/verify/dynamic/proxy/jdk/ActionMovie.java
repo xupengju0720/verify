@@ -1,4 +1,4 @@
-package com.daily.verify.verify.dynamic.proxy;
+package com.daily.verify.verify.dynamic.proxy.jdk;
 
 public class ActionMovie implements Movie {
     @Override

@@ -1,4 +1,4 @@
-package com.daily.verify.verify.dynamic.proxy;
+package com.daily.verify.verify.dynamic.proxy.jdk;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
