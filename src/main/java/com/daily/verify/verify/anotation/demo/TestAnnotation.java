@@ -1,4 +1,4 @@
-package com.daily.verify.verify.anotation;
+package com.daily.verify.verify.anotation.demo;
 
 import java.lang.reflect.Method;
 
@@ -9,7 +9,7 @@ public class TestAnnotation {
     public static void main(String[] args) {
         try {
             //获取Student的Class对象
-            Class stuClass = Class.forName("com.daily.verify.verify.anotation.Student");
+            Class stuClass = Class.forName("com.daily.verify.verify.anotation.demo.Student");
             //说明一下，这里形参不能写成Integer.class，应写为int.class
             Method stuMethod = stuClass.getMethod("study", int.class);
             //判断是否使用定义的注解

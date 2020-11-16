@@ -1,4 +1,4 @@
-package com.daily.verify.verify.anotation;
+package com.daily.verify.verify.anotation.demo;
 
 public class Student {
     @SelfFunctionAnotation(name = "小明", array = {1, 2, 3})

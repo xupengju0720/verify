@@ -1,4 +1,4 @@
-package com.daily.verify.verify.anotation;
+package com.daily.verify.verify.anotation.demo;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
