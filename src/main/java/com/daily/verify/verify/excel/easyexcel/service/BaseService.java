@@ -16,7 +16,7 @@ public interface BaseService<E, P> {
     /**
      *主要流程方法
      */
-    ApiResponse ExcelHandel(String funcId, String groupId, E e, P p);
+    ApiResponse excelHandel(String funcId, String groupId, E e, P p);
     /**
      *读取excel的参数Sheet
      */

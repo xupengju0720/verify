@@ -47,7 +47,7 @@ public abstract class BaseServiceImpl<E extends CompareKey, P> implements BaseSe
     }
 
     @Override
-    public ApiResponse ExcelHandel(String funcId, String groupId, E e, P p) {
+    public ApiResponse excelHandel(String funcId, String groupId, E e, P p) {
         Long start = System.currentTimeMillis();
         FuncIdEnum funcIdEnum = FuncIdEnum.getEnumByFundId(funcId, groupId);
         if (null == funcIdEnum)

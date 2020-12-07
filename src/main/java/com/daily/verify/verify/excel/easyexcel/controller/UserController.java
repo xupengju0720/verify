@@ -17,6 +17,6 @@ public class UserController {
     @PostMapping("/readExcel")
     @ResponseBody
     public ApiResponse readExcel(String funcId, String groupId) {
-        return service.ExcelHandel(funcId, groupId);
+        return service.excelHandel(funcId, groupId);
     }
 }

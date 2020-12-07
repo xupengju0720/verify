@@ -41,7 +41,7 @@ public class UserServiceImpl extends BaseServiceImpl<UserExpire, UserParm> imple
 
 
     @Override
-    public ApiResponse ExcelHandel(String funcId, String groupId) {
-        return super.ExcelHandel(funcId, groupId, new UserExpire(), new UserParm());
+    public ApiResponse excelHandel(String funcId, String groupId) {
+        return super.excelHandel(funcId, groupId, new UserExpire(), new UserParm());
     }
 }
