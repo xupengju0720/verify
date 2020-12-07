@@ -1,7 +1,8 @@
-package com.daily.verify.verify.excel.easyexcel.model;
+package com.daily.verify.verify.excel.easyexcel.model.param;
 
 import com.alibaba.excel.annotation.ExcelProperty;
 import com.alibaba.excel.metadata.BaseRowModel;
+import com.daily.verify.verify.excel.easyexcel.anotation.ColumnFieldMap;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,7 +12,7 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserExcelModel extends BaseRowModel implements Serializable {
+public class UserParm extends BaseRowModel implements Serializable, ColumnFieldMap {
     //数据类型 第一位
     @ExcelProperty(value = "数据类型")
     private String data_type;

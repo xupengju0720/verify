@@ -18,7 +18,7 @@ public class ModelExcelListener extends AnalysisEventListener {
     public void invoke(Object data, AnalysisContext context) {
         //数据存储到list，供批量处理，或后续自己业务逻辑处理。
         log.info("读取到数据{}", data);
-        datas.add(data);
+        //datas.add(data);
         //根据业务自行处理，可以写入数据库等等
     }
 

@@ -1,17 +1,18 @@
-package com.daily.verify.verify.excel.easyexcel.model;
+package com.daily.verify.verify.excel.easyexcel.model.expire;
 
+import com.alibaba.excel.annotation.ExcelIgnoreUnannotated;
 import com.alibaba.excel.annotation.ExcelProperty;
 import com.alibaba.excel.metadata.BaseRowModel;
-import lombok.AllArgsConstructor;
+import com.daily.verify.verify.excel.easyexcel.anotation.CompareKey;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-public class UserExcelModel extends BaseRowModel implements Serializable {
+@ExcelIgnoreUnannotated
+public class UserExpire extends BaseRowModel implements Serializable, CompareKey {
     //数据类型 第一位
     @ExcelProperty(value = "数据类型")
     private String data_type;
@@ -34,6 +35,14 @@ public class UserExcelModel extends BaseRowModel implements Serializable {
     @ExcelProperty(value = "user_sex")
     private String sex;
 
+    @ExcelProperty(value = "user_index")
+    private Integer index;
+
     @ExcelProperty(value = "失败原因")
     private String msg;
+
+    @Override
+    public String getCompareKey() {
+        return this.mobile;
+    }
 }
