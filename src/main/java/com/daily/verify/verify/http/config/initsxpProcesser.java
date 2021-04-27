@@ -36,6 +36,9 @@ public class initsxpProcesser implements EnvironmentPostProcessor, Ordered {
         }
     }
 
+    /**
+     * 构造需要加入环境变量的配置，真实情况下是访问远程连接获取配置
+     */
     private Map<String, Object> buildEnv() {
         //获取到数据
         Map<String, Object> result = new HashMap<>();
