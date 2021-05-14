@@ -33,5 +33,25 @@ public class LocalPersonalImpl extends DefaultPersonalImpl {
 
     }
 
+    @Override
+    public boolean expire(String key, long time) {
+        return false;
+    }
+
+    @Override
+    public long getExpire(String key) {
+        return 0;
+    }
+
+    @Override
+    public boolean hasKey(String key) {
+        return false;
+    }
+
+    @Override
+    public void del(String... key) {
+
+    }
+
 
 }
